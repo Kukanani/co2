@@ -1,0 +1,3 @@
+[submodule "CO2Meter"]
+	path = CO2Meter
+	url = https://github.com/heinemml/CO2Meter.git
