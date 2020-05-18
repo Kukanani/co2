@@ -13,7 +13,7 @@ ENCODING = 'utf-8'
 LOGDIR = "logs"
 
 
-Meter = CO2Meter("/dev/hidraw0")
+Meter = CO2Meter("/dev/co2")
 while True:
     start_day = date.today()
     fn = osp.join(LOGDIR, 'co2_{}.csv'.format(date.today().isoformat()))

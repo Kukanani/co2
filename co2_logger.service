@@ -1,0 +1,10 @@
+[Unit]
+Description=CO2 Logger
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/co2
+ExecStart=/usr/bin/python3 /home/pi/co2/logger.py > /home/pi/co2/logs/last_log
+
+[Install]
+WantedBy=multi-user.target
